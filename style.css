@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+}
+
+main {
+    margin: auto;
+}
+
+#served-gif {
+    text-align: center;
+}
+
+#motivational-button {
+    text-align: right;
+}
+
+#animal-button {
+    text-align: left;
+}
+
+#not-cute-button {
+    text-align: center;
+}
+
+#settings {
+    background-color: grey;
+    height: 200px;
+}
+
+#contact {
+    height: 100px;
+}
+
+img {
+    /* border: solid; */
+}
+
+.nav-wrapper {
+    width: 100%;
+}
+
+form {
+    text-align: center;
+}
+
+footer {
+    height: 100px;
+    background-color: pink;
+}
