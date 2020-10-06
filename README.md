@@ -5,6 +5,8 @@ Generate images of cute animals for inspiration
 
 ## Links
 
+https://github.com/penguinorange/fuzzy_feelings.git
+
 ## Screenshots
 
 ## Credits
