@@ -5,7 +5,9 @@
 $("#motive").on("click", function () {
 
     // Storing our giphy API URL for a random image
-    var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=3tLQ2TOR00NfbftDClkOtbHe3G2oTIy4";
+    // var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=3tLQ2TOR00NfbftDClkOtbHe3G2oTIy4";
+
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=1OJfQRjf1GxgJO2SDQH5dAf6cVwWsNW0&q=motivation&limit=50&offset=0&rating=pg-13&lang=en";
 
     $.ajax({
         url: queryURL,
