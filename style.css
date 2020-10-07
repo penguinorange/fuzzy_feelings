@@ -1,10 +1,11 @@
 body {
     text-align: center;
+    background-color: #dcdcdc;
 }
 
-main {
+/* main {
     margin: auto;
-}
+} */
 
 #served-gif {
     text-align: center;
@@ -23,27 +24,30 @@ main {
 }
 
 #settings {
-    background-color: grey;
+    /* background-color: #ee6e73; */
     height: 200px;
+    border: solid;
 }
 
 #contact {
     height: 100px;
+    background-color: #dcdcdc;
 }
 
 /* img {
     border: solid;
 } */
 
-.nav-wrapper {
+/* .nav-wrapper {
     width: 100%;
-}
+} */
 
 form {
     text-align: center;
 }
 
 footer {
-    height: 100px;
-    background-color: pink;
+    height: 40px;
+    background-color: #ee6e73;
+    padding-top: 10px;
 }
