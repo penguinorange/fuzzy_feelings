@@ -2,8 +2,8 @@
 <html>
 
 <head>
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -15,53 +15,59 @@
 <header>
     <nav>
         <div class="nav-wrapper">
-            <!-- <a href="#!" class="brand-logo">Fuzzy Feelings</a> -->
+            <!-- <a href="#!" class="brand-logo">Logo</a> -->
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#settings">Settings</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <ul class="sidenav" id="mobile-demo">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#main-section">Home</a></li>
                 <li><a href="#settings">Settings</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#main-section">Home</a></li>
+        <li><a href="#settings">Settings</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 </header>
+
 <body>
-    <main class="container">
+
+    <main class="container" id="main-section">
         <h1>Fuzzy Feelings</h1>
         <div class="row">
             <div class="row">
                 <div id="main-image-div" class="col s12 main-image-div-class">
                     <img id="main-image" class="served-gif" src="purrfect.gif" alt="motivational cat gif">
                 </div>
-                <div class="col s12"><p>Click a button to get a new meme!</p></div>
+                <div class="col s12">
+                    <p>Click a button to get a new meme!</p>
+                </div>
                 <div id="motivational-button" class="col s6">
                     <button class="waves-effect waves-light btn-large" width="100px">new motivational</button>
                 </div>
                 <div id="animal-button" class="col s6">
                     <button class="waves-effect waves-light btn-large" width="100px">new animal</button>
                 </div>
-                </br></div>
-                <div id="not-cute-button" class="col s12"><button class="waves-effect waves-light btn-small">Not cute enough? Try again!</button></div>
+                </br>
             </div>
+            <div id="not-cute-button" class="col s12"><button class="waves-effect waves-light btn-small">Not cute
+                    enough? Try again!</button></div>
+        </div>
     </main>
     <div id="settings">
         <h3>Default Settings:</h3>
         <p>Which do you prefer on refresh?</p>
         <form action="#">
             <p>
-            <label>
-                <input name="group1" type="radio" />
-                <span>Motivational</span>
-                <input name="group1" type="radio" />
-                <span>Animal</span>
-                <input name="group1" type="radio" checked />
-                <span>Either</span>
-            </label>
+                <label>
+                    <input name="group1" type="radio" />
+                    <span>Motivational</span>
+                    <input name="group1" type="radio" />
+                    <span>Animal</span>
+                    <input name="group1" type="radio" checked />
+                    <span>Either</span>
+                </label>
             </p>
         </form>
     </div>
@@ -69,8 +75,14 @@
         <p>This is a link to developer contact info</p>
     </div>
     <footer>Fuzzy Feelings &#169 2020</footer>
+
     <script>
-        // javascript here
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
     </script>
 
 </body>
