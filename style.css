@@ -24,14 +24,24 @@ body {
 }
 
 #settings {
-background-color: white;
+    background-color: white;
     height: 200px;
-    /* border: solid; */
+    padding-top: 10px;
+    
 }
 
 #contact {
-    height: 100px;
+    height: 60px;
     background-color: #dcdcdc;
+}
+
+.FFbutton {
+    color: white;
+    background-color: #26A69A;
+    border-radius: 12px;
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
 }
 
 @media only screen and (max-width: 400px) {
@@ -53,6 +63,11 @@ background-color: white;
         font-size: 10px !important;
     }
 
+    .FFbutton {
+        width: 100%;
+        height: auto;
+    }
+
 
 }
 
@@ -66,14 +81,6 @@ background-color: white;
         height: auto;
     }
 }
-
-/* img {
-    border: solid;
-} */
-
-/* .nav-wrapper {
-    width: 100%;
-} */
 
 form {
     text-align: center;
