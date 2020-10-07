@@ -11,6 +11,9 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    
+
 </head>
 <header>
     <nav>
@@ -45,16 +48,18 @@
                 </div>
                 <div class= "btn-duet">
                     <div id="motivational-button" class="col s6">
-                        <button class="waves-effect waves-light btn-large" width="100px">Motivation</button>
+                        <button id = "motive" class="waves-effect waves-light btn-large" width="100px">Motivation</button>
                     </div>
                     <div id="animal-button" class="col s6">
-                        <button class="waves-effect waves-light btn-large" width="100px">Animal</button>
+                        <button id= "animal" class="waves-effect waves-light btn-large" width="100px">Animal</button>
                     </div>
+                </div>
                 </div>
                 </br>
             </div>
-            <div id="not-cute-button" class="col s12"><button class="waves-effect waves-light btn-small">Not cute
-                    enough? Try again!</button></div>
+            <div id="not-cute-button" class="col s12">
+                <button id="random" class="waves-effect waves-light btn-small">Not cute enough? Try again!</button>
+                </div>
         </div>
     </main>
     <div id="settings">
@@ -86,7 +91,8 @@
         });
 
     </script>
-
+<script src="https://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="giphyAPI.js"></script>
 </body>
 
 </html>

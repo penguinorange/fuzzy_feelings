@@ -1,11 +1,10 @@
 
 
 
+// Event listener for our motive-button
+$("#motive").on("click", function () {
 
-// Event listener for our cat-button
-$("#animal").on("click", function () {
-
-    // Storing our giphy API URL for a random cat image
+    // Storing our giphy API URL for a random image
     var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=3tLQ2TOR00NfbftDClkOtbHe3G2oTIy4";
 
     $.ajax({
@@ -15,20 +14,21 @@ $("#animal").on("click", function () {
         console.log(response);
         // After the data from the AJAX request comes back
 
-            // Saving the image_original_url property
-            var imageUrl = response.data[0].images.downsized.url;
+        var imageArr = response.data;
+        console.log(imageArr);
 
-            // Creating and storing an image tag
-            var catImage = $("<img>");
+        // Generate random index based on number of keys
+        var randIndex = Math.floor(Math.random() * imageArr.length);
+        console.log(randIndex);
 
-            // Setting the catImage src attribute to imageUrl
-            catImage.attr("src", imageUrl);
-            catImage.attr("alt", "cat image");
+        var randImage = imageArr[randIndex].images.original.url;
+        console.log(randImage);
 
-            // Prepending the catImage to the images div
-            $("#images").prepend(catImage);
-        });
+        var imageUrl = randImage;
+
+        $("#main-image").attr("src", imageUrl);
     });
+});
 
 
 
