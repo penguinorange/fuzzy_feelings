@@ -20,17 +20,17 @@ Fuzzy Feelings is an application that generates images of motivational memes and
 
 ### Mobile-first:
 
-![Mobile-first Demo](./images/mobile-first.PNG)
+![Mobile-first Demo](./screenshots/mobile-first.PNG)
 
 
 ### iPad:
 
-![iPad Demo](./images/ipad.PNG)
+![iPad Demo](./screenshots/ipad.PNG)
 
 
 ### Browser:
 
-![Browser Demo](./images/browser.PNG)
+![Browser Demo](./screenshots/browser.PNG)
 
 
 
