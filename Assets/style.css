@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "HairyBeard";
+    src: URL("./HairyBeard_1.ttf") format("truetype");
+}
+
+h1 {
+    font-family: "HairyBeard", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 150px;
+}
+
 body {
     text-align: center;
     background-color: #dcdcdc;
@@ -64,6 +74,10 @@ body {
         height: auto;
     }
 
+    h1 {
+        font-size: 60px;
+    }
+
 
 }
 
@@ -75,6 +89,10 @@ body {
     img {
         width: 100%;
         height: auto;
+    }
+
+    h1 {
+        font-size: 70px;
     }
 }
 
