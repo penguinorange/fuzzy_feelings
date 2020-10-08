@@ -12,8 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.jquery.com/jquery.js"></script>
-    
-
 </head>
 <header>
     <nav>
@@ -23,14 +21,14 @@
             <ul class="right hide-on-med-and-down">
                 <li><a href="#main-section">Home</a></li>
                 <li><a href="#settings">Settings</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/penguinorange/fuzzy_feelings" target="_blank" >Contact</a></li>
             </ul>
         </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
         <li><a href="#main-section">Home</a></li>
         <li><a href="#settings">Settings</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://github.com/penguinorange/fuzzy_feelings" target="_blank">Contact</a></li>
     </ul>
 </header>
 
@@ -60,20 +58,22 @@
         </div>
     </main>
     <div id="settings">
+        
         <h4>Default Settings:</h4>
         <p>Which do you prefer on refresh?</p>
-        <form action="#">
-            <p>
-                <label>
-                    <input name="group1" type="radio" />
-                    <span>Motivational</span>
-                    <input name="group1" type="radio" />
-                    <span>Animal</span>
-                    <input name="group1" type="radio" checked />
-                    <span>Either</span>
-                </label>
-            </p>
-        </form>
+        <label class="radio-container">
+            <input id="radio-default" type="radio" checked name="radio">
+            <span >Default</span>
+        </label>  
+        <label class="radio-container">
+          <input id="radio-motivational" type="radio" name="radio">
+          <span >Motivational</span>
+        </label>
+        <label class="radio-container">
+          <input id="radio-animal" type="radio" name="radio">
+          <span >Animal</span>
+        </label>
+
     </div>
     <div id="contact">
         <p>This is a link to developer contact info</p>
