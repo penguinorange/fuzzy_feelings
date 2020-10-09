@@ -6,9 +6,9 @@ Fuzzy Feelings is an application that generates images of motivational memes and
 
 ## Links
 
-- Deployed URL: https://github.com/penguinorange/fuzzy_feelings.git
+- Repository: https://github.com/penguinorange/fuzzy_feelings.git
 
-- Repository: https://penguinorange.github.io/fuzzy_feelings/
+- Deployed Application: https://penguinorange.github.io/fuzzy_feelings/
 
 
 ## Resources
