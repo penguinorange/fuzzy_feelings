@@ -15,6 +15,9 @@ Fuzzy Feelings is an application that generates images of motivational memes and
 - Materialize 
 - Giphy
 - Tenor
+- FontSpace
+- Transfonter
+- HTML, CSS, JS, jQuery
 
 ## Screenshots
 
